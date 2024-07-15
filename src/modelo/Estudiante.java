@@ -11,12 +11,14 @@ package modelo;
 public class Estudiante extends Persona {
     
     private int idEstudiante;
-    private int numMatricula;
+    private String matricula;
+    private boolean finalizoMantenimiento;
 
-    public Estudiante(int idEstudiante, int numMatricula, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
+    public Estudiante(int idEstudiante, String matricula, boolean finalizoMantenimiento, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
         super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, clave);
         this.idEstudiante = idEstudiante;
-        this.numMatricula = numMatricula;
+        this.matricula = matricula;
+        this.finalizoMantenimiento = finalizoMantenimiento;
     }
 
     public int getIdEstudiante() {
@@ -27,12 +29,20 @@ public class Estudiante extends Persona {
         this.idEstudiante = idEstudiante;
     }
 
-    public int getNumMatricula() {
-        return numMatricula;
+    public String getMatricula() {
+        return matricula;
     }
 
-    public void setNumMatricula(int numMatricula) {
-        this.numMatricula = numMatricula;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public boolean isFinalizoMantenimiento() {
+        return finalizoMantenimiento;
+    }
+
+    public void setFinalizoMantenimiento(boolean finalizoMantenimiento) {
+        this.finalizoMantenimiento = finalizoMantenimiento;
     }
     
     public String imprimir(){
@@ -44,8 +54,8 @@ public class Estudiante extends Persona {
                 "Correo Electronico" +getCorreoElectronico()+"\n"+
                 "Direccion" +getDireccion()+"\n"+
                 "Telefono" +getTelefono()+"\n"+
-                "Clave:" + "************\n"+"\n"+
-                "Numero Matricula: "+getNumMatricula();
+                "Clave:" + "************\n"+
+                "Numero Matricula: "+getMatricula();
     }
     
 }
