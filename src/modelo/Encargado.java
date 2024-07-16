@@ -10,19 +10,19 @@ package modelo;
  */
 public class Encargado extends Persona {
     
-    private int idDocente;
+    private int idEncargado;
 
-    public Encargado(int idDocente, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
+    public Encargado(int idEncargado, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
         super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, clave);
-        this.idDocente = idDocente;
+        this.idEncargado = idEncargado;
     }
 
-    public int getIdDocente() {
-        return idDocente;
+    public int getIdEncargado() {
+        return idEncargado;
     }
 
-    public void setIdDocente(int idDocente) {
-        this.idDocente = idDocente;
+    public void setIdEncargado(int idEncargado) {
+        this.idEncargado = idEncargado;
     }
     
     @Override

@@ -14,14 +14,16 @@ public class Laboratorio {
     
     private int idLaboratorio;
     private String nombre;
-    private int capacidad;
+    private String edificio;
+    private int numComputadoras;
     private Encargado encargado;
-    private ArrayList<Computadora> listaComputadora;
 
-    public Laboratorio(int idLaboratorio, String nombre, int capacidad) {
+    public Laboratorio(int idLaboratorio, String nombre, String edificio, int numComputadoras, Encargado encargado) {
         this.idLaboratorio = idLaboratorio;
         this.nombre = nombre;
-        this.capacidad = capacidad;
+        this.edificio = edificio;
+        this.numComputadoras = numComputadoras;
+        this.encargado = encargado;
     }
 
     public int getIdLaboratorio() {
@@ -40,14 +42,27 @@ public class Laboratorio {
         this.nombre = nombre;
     }
 
-    public int getCapacidad() {
-        return capacidad;
+    public String getEdificio() {
+        return edificio;
     }
 
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
+    public void setEdificio(String edificio) {
+        this.edificio = edificio;
     }
-    
-    
-    
+
+    public int getNumComputadoras() {
+        return numComputadoras;
+    }
+
+    public void setNumComputadoras(int numComputadoras) {
+        this.numComputadoras = numComputadoras;
+    }
+
+    public Encargado getEncargado() {
+        return encargado;
+    }
+
+    public void setEncargado(Encargado encargado) {
+        this.encargado = encargado;
+    }
 }
