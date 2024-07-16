@@ -17,9 +17,13 @@ public class Persona {
     private String correoElectronico;
     private String direccion;
     private String telefono;
+    private String usuario;
     private String clave;
 
-    public Persona(int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
+    public Persona() {
+    }
+
+    public Persona(int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String usuario, String clave) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -27,6 +31,7 @@ public class Persona {
         this.correoElectronico = correoElectronico;
         this.direccion = direccion;
         this.telefono = telefono;
+        this.usuario = usuario;
         this.clave = clave;
     }
 
@@ -86,6 +91,14 @@ public class Persona {
         this.telefono = telefono;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
     public String getClave() {
         return clave;
     }
@@ -106,11 +119,6 @@ public class Persona {
                 "Clave:" + "************\n"
                 ;
     }
-    
-
-
-    
-    
-    }
+}
     
 

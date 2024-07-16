@@ -15,8 +15,8 @@ public class Estudiante extends Persona {
     private boolean finalizoMantenimiento;
     private int idPersona;
 
-    public Estudiante(int idEstudiante, String matricula, boolean finalizoMantenimiento, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
-        super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, clave);
+    public Estudiante(int idEstudiante, String matricula, boolean finalizoMantenimiento, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String usuario, String clave) {
+        super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, usuario, clave);
         this.idEstudiante = idEstudiante;
         this.matricula = matricula;
         this.finalizoMantenimiento = finalizoMantenimiento;
@@ -54,8 +54,6 @@ public class Estudiante extends Persona {
     public void setIdPersona(int idPersona) {
         this.idPersona = idPersona;
     }
-
-    
     
     public String imprimir(){
         return 

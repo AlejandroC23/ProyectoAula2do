@@ -12,8 +12,11 @@ public class Administrador extends Persona {
     
     private int  idAdministrador;
 
-    public Administrador(int idAdministrador, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String clave) {
-        super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, clave);
+    public Administrador() {
+    }
+
+    public Administrador(int idAdministrador, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String usuario, String clave) {
+        super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, usuario, clave);
         this.idAdministrador = idAdministrador;
     }
 
