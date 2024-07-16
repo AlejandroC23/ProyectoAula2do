@@ -26,7 +26,7 @@ public class PersonaControlador {
         try {
             String consulta = "INSERT INTO personas(per_nombre, "
                     + "per_apellido, "
-                    + "per_usuario, "
+                    + "per_cedula, "
                     + "per_usuario, "
                     + "per_clave, "
                     + "per_telefono, "
@@ -34,6 +34,7 @@ public class PersonaControlador {
                     + "per_direccion) " +
             "VALUES ('" + p.getNombre() + "','" 
                     + p.getApellido() + "','"
+                    + p.getCedula()+ "','"
                     + p.getUsuario() + "','" 
                     + p.getClave() + "','" 
                     + p.getTelefono()+ "','"
