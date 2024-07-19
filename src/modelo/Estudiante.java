@@ -15,6 +15,10 @@ public class Estudiante extends Persona {
     private boolean finalizoMantenimiento;
     private int idPersona;
 
+    public Estudiante() {
+    }
+
+    
     public Estudiante(int idEstudiante, String matricula, boolean finalizoMantenimiento, int idPersona, String nombre, String apellido, String cedula, String correoElectronico, String direccion, String telefono, String usuario, String clave) {
         super(idPersona, nombre, apellido, cedula, correoElectronico, direccion, telefono, usuario, clave);
         this.idEstudiante = idEstudiante;

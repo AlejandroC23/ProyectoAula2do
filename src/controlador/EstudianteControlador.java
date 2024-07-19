@@ -4,10 +4,16 @@
  */
 package controlador;
 
+import modelo.Estudiante;
+
 /**
  *
  * @author Alejandro
  */
 public class EstudianteControlador {
+
+    public void crearEstudiante(Estudiante est) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
